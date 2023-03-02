@@ -1,6 +1,25 @@
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { Manrope } from 'next/font/google'
+import { AppPropsWithLayout } from '@/typescript/nextpage'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const manrope = Manrope({
+  subsets: ['latin'],
+});
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  // get layout
+  const getLayout = Component.getLayout || ((page) => page);
+  return getLayout(
+    <>
+      <style jsx global>
+        {`
+          :root {
+            --manrope-font: ${manrope.style.fontFamily};
+          }
+        `}
+      </style>
+      <Component {...pageProps} />
+    </>
+  );
 }
+export default MyApp;
