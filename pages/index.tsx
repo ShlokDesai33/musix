@@ -8,7 +8,7 @@ export default function Index() {
           <Waveform
             size={55}
             lineWeight={4}
-            speed={1}
+            speed={2}
             color="black"
           />
           <h1 className="text-4xl font-semibold mt-5">Musix</h1>

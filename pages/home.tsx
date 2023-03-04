@@ -2,6 +2,7 @@ import Artist from '@/components/home/artist'
 import Song from '@/components/home/song'
 import Layout from '@/components/layouts/mobile'
 import Show from '@/components/show.'
+import Link from 'next/link'
 import { UsersThree, SpotifyLogo, Equalizer } from 'phosphor-react'
 
 const artists = [
@@ -27,7 +28,7 @@ export default function Home() {
           Welcome back, {"Shlok"}
         </p>
         <p className="text-sm text-gray-600 mt-1">
-          Start a new session now!
+          Start listening now!
         </p>
 
         <hr className="mt-5 mb-4" />
@@ -86,10 +87,12 @@ export default function Home() {
         </div>
       </div>
       
-      <button className="flex items-center justify-center gap-x-2 py-4 rounded-full mt-8 bg-gray-200">
-        <UsersThree size={24} />
-        Create Session
-      </button>
+      <Link href="/create">
+        <div className="flex items-center justify-center gap-x-2 py-4 rounded-full mt-8 bg-gray-200">
+          <UsersThree size={24} />
+          Create Session
+        </div>
+      </Link>
     </div>
   )
 }

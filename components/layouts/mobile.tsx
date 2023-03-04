@@ -1,5 +1,6 @@
 import Head from  'next/head'
 import Header from './header'
+import dynamic from 'next/dynamic'
 
 export default function MobileLayout({ children }: Props) {
   return (
@@ -12,6 +13,7 @@ export default function MobileLayout({ children }: Props) {
       
       <div className="flex flex-col h-full">
         <Header />
+        <DynamicToaster />
         <main className="grow py-6 px-4">
           {children}
         </main>
@@ -19,6 +21,13 @@ export default function MobileLayout({ children }: Props) {
     </>
   )
 }
+
+// ------------------------------ //
+// dynamic imports
+
+const DynamicToaster = dynamic(
+  () => import("./toaster"), { ssr: false }
+);
 
 // ------------------------------ //
 // types
