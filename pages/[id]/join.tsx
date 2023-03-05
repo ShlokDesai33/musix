@@ -11,7 +11,7 @@ export default function JoinSession() {
   // get url params
   const { id } = router.query;
   const { data, isLoading } = joinSession({
-    id: id as string,
+    sessionId: id as string,
     userId: user?.id
   });
 

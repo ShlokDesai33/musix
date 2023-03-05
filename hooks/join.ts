@@ -1,7 +1,7 @@
 import useSWR from 'swr'
 
 export const fetcher = (body: any) => fetch(
-  `/join-session`,
+  `https://javin.jmsgvn.com/sessions/join-session`,
   {
     method: 'PUT',
     headers: {
