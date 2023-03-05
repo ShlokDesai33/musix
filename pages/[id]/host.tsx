@@ -40,7 +40,7 @@ export default function HostSession({ id, themeId }: { id: string, themeId: stri
           <QRCode
             size={256}
             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-            value={`https://www.musix.vercel.app/${id}/join/`}
+            value={`https://musix-two.vercel.app/${id}/join/`}
             viewBox={`0 0 256 256`}
           />
         </div>

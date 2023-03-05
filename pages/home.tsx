@@ -33,7 +33,7 @@ export default function Home() {
           >
             <div className="mt-3">
               {user?.activeSessions.map((session) => (
-                <Link key={session.id} href={`/session/${session.id}`}>
+                <Link key={session.id} href={`/${session.id}/session/`}>
                   <div className="flex items-center justify-between border-2 px-4 py-2 rounded-lg">
                     <div>
                       <p>{session.theme}</p>

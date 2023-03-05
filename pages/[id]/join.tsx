@@ -12,6 +12,7 @@ export default function JoinSession() {
   const user = useMusixStore(state => state.user);
   // get url params
   const { id } = router.query;
+  
   const { data, isLoading } = joinSession({
     sessionId: id as string,
     userId: user?.id

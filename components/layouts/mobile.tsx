@@ -22,7 +22,7 @@ export default function MobileLayout({ children }: Props) {
 
   // if user is not logged in, redirect to login page
   if (!user) {
-    router.push('/');
+    router.push(`/`);
     return <LoadingSpinner />
   }
   

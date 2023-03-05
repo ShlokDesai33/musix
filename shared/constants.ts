@@ -20,7 +20,7 @@ export const themes = [
     'name': 'Shower Time 😈'
   },
   {
-    'id': '37i9dQZF1EIgSjgoYBB2M6',
+    'id': '37i9dQZF1EIgzSCNweQzPQ',
     'name': 'Pumping Iron'
   },
   {
@@ -36,7 +36,7 @@ export const themes = [
     'name': 'Study Time'
   },
   {
-    'id': '37i9dQZF1EIghjZV03OkEv',
+    'id': '37i9dQZF1EQncLwOalG3K7',
     'name': 'Mainstream Pop'
   },
   {
@@ -47,6 +47,38 @@ export const themes = [
     'id': '37i9dQZF1EIdzRg9sDFEY3',
     'name': 'Everybody\'s Top Songs'
   },
+  {
+    'id': '37i9dQZEVXcCS53tQ20Hqb',
+    'name': 'Discover New Music'
+  },
+  {
+    'id': '37i9dQZF1EVKuMoAJjoTIw',
+    'name': 'In The Feels'
+  },
+  {
+    'id': '37i9dQZF1DXaMu9xyX1HzK',
+    'name': 'Best of the Decade'
+  },
+  {
+    'id': '37i9dQZF1EIfIhwClkyzKs',
+    'name': 'Pregame Hype'
+  },
+  {
+    'id': '37i9dQZF1EIg6gLNLe52Bd',
+    'name': 'Feeling Lonely'
+  },
+  {
+    'id': '37i9dQZF1EIfAUjCjCWZSL',
+    'name': 'Hopeless Romantic'
+  },
+  {
+    'id': '37i9dQZF1EpDgaNkOIyHEt',
+    'name': 'On Repeat'
+  },
+  {
+    'id': '37i9dQZF1EIhauTHCZ2YdO',
+    'name': 'Rave Session'
+  }
 ]
 
 export const scopes = [
