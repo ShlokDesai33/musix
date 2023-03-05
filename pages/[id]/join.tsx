@@ -18,6 +18,8 @@ export default function JoinSession() {
     userId: user?.id
   });
 
+  console.log(data);
+
   if (isLoading) return <LoadingSpinner />;
   
   return (

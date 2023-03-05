@@ -1,13 +1,20 @@
 export const themesMap = new Map([
   ['37i9dQZF1EIdzRg9sDFEY3', 'Party'],
   ['37i9dQZF1EIfkE4mG1NtgG', 'Shower Time 😈'],
-  ['37i9dQZF1EIgSjgoYBB2M6', 'Pumping Iron'],
-  ['37i9dQZF1EIdzRg9sDFEY3', 'Dance Mix'],
+  ['37i9dQZF1EIgzSCNweQzPQ', 'Pumping Iron'],
+  ['37i9dQZF1EIhIsNBs86Fmu', 'Dance Mix'],
   ['37i9dQZF1EIcNUtFW3CJZc', 'Soft Music Mix'],
-  ['37i9dQZF1EIfMdgv54LYV9', 'Study Time'],
-  ['37i9dQZF1EIghjZV03OkEv', 'Mainstream Pop'],
+  ['37i9dQZF1EIgKXhXqo61vc', 'Study Time'],
+  ['37i9dQZF1EQncLwOalG3K7', 'Mainstream Pop'],
   ['37i9dQZF1EIgdaFq1y2GqO', 'Pirate Metal Shanty'],
-  ['37i9dQZF1EIdzRg9sDFEY3', 'Everybody\'s Top Songs'],
+  ['37i9dQZF1EpDgaNkOIyHEt', 'Everybody\'s Top Songs'],
+  ['37i9dQZEVXcCS53tQ20Hqb', 'Discover New Music'],
+  ['37i9dQZF1EVKuMoAJjoTIw', 'In The Feels'],
+  ['37i9dQZF1DWZBhmSz1J4m8', 'Best of the Decade'],
+  ['37i9dQZF1EIfIhwClkyzKs', 'Pregame Hype'],
+  ['37i9dQZF1EIg6gLNLe52Bd', 'Feeling Lonely'],
+  ['37i9dQZF1EIfAUjCjCWZSL', 'Hopeless Romantic'],
+  ['37i9dQZF1EIhauTHCZ2YdO', 'Rave Session']
 ]);
 
 export const themes = [
@@ -24,7 +31,7 @@ export const themes = [
     'name': 'Pumping Iron'
   },
   {
-    'id': '37i9dQZF1EIdzRg9sDFEY3',
+    'id': '37i9dQZF1EIhIsNBs86Fmu',
     'name': 'Dance Mix'
   },
   {
@@ -32,7 +39,7 @@ export const themes = [
     'name': 'Soft Music Mix'
   },
   {
-    'id': '37i9dQZF1EIfMdgv54LYV9',
+    'id': '37i9dQZF1EIgKXhXqo61vc',
     'name': 'Study Time'
   },
   {
@@ -44,7 +51,7 @@ export const themes = [
     'name': 'Pirate Metal Shanty'
   },
   {
-    'id': '37i9dQZF1EIdzRg9sDFEY3',
+    'id': '37i9dQZF1EpDgaNkOIyHEt',
     'name': 'Everybody\'s Top Songs'
   },
   {
@@ -56,7 +63,7 @@ export const themes = [
     'name': 'In The Feels'
   },
   {
-    'id': '37i9dQZF1DXaMu9xyX1HzK',
+    'id': '37i9dQZF1DWZBhmSz1J4m8',
     'name': 'Best of the Decade'
   },
   {
@@ -70,10 +77,6 @@ export const themes = [
   {
     'id': '37i9dQZF1EIfAUjCjCWZSL',
     'name': 'Hopeless Romantic'
-  },
-  {
-    'id': '37i9dQZF1EpDgaNkOIyHEt',
-    'name': 'On Repeat'
   },
   {
     'id': '37i9dQZF1EIhauTHCZ2YdO',
