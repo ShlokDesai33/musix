@@ -11,7 +11,7 @@ export default function Login({ code }: { code: string }) {
 
   useEffect(() => {
     // fetch user data from backend using code
-    fetch(`https://javin.jmsgvn.com/auth/login`, {
+    fetch(`https://javin.jmsgvn.com/auth/refresh`, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
