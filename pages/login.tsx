@@ -11,19 +11,20 @@ export default function Login({ code }: { code: string }) {
 
   useEffect(() => {
     // fetch user data from backend using code
-    fetch(`https://javin.jmsgvn.com/auth/refresh`, {
-      // method: 'POST',
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
-      // body: JSON.stringify({ code: code }),
-    })
-      .then(res => res.json())
-      .then(data => {
-        setUser(data);
-        router.push('/home');
-      })
-      .catch(err => console.error(err));
+    // fetch(`https://javin.jmsgvn.com/auth/refresh`, {
+    //   method: 'POST',
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ code: code }),
+    // })
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     setUser(data);
+    //     router.push('/home');
+    //   })
+    //   .catch(err => console.error(err));
+    window.location.href = `https://javin.jmsgvn.com/auth/refresh`;
   }, []);
 
   return (
