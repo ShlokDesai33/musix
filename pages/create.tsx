@@ -31,13 +31,13 @@ export default function CreateSession() {
               })
 
               // make post request to create session
-              fetch('/create-session', {
+              fetch('https://javin.jmsgvn.com/sessions/create-session', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                  theme: theme.name,
+                  themeId: theme.id,
                   creatorId: user.id,
                 })
               })
@@ -45,7 +45,7 @@ export default function CreateSession() {
                 .then(data => {
                   router.replace(`/${data.id}/host?themeId=${theme.id}`);
                 })
-                .catch(err => console.log(err))
+                .catch(err => console.log(err));
             }}
             type="button"
           >

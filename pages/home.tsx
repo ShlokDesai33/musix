@@ -70,7 +70,7 @@ export default function Home() {
           <p className="text-sm mt-4">
             Your Top Artists
           </p>
-          <div className="flex gap-4 flex-wrap mt-2">
+          <div className="flex gap-4 flex-wrap mt-3">
             {user?.topArtists.map((artist) => (
               <Artist key={artist.name} {...artist} />
             ))}
