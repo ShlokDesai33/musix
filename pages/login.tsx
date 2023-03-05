@@ -12,11 +12,11 @@ export default function Login({ code }: { code: string }) {
   useEffect(() => {
     // fetch user data from backend using code
     fetch(`https://javin.jmsgvn.com/auth/refresh`, {
-      method: 'GET',
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ code: code }),
+      // method: 'POST',
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
+      // body: JSON.stringify({ code: code }),
     })
       .then(res => res.json())
       .then(data => {
