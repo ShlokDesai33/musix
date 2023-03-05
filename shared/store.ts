@@ -10,15 +10,7 @@ interface MusixStore {
 const useMusixStore = create<MusixStore>()(
   persist(
     (set) => ({
-      user: {
-        id: 'test-user-123',
-        name: 'User',
-        email: 'example@gmail.com',
-        streaming: false,
-        activeSessions: [],
-        topArtists: [],
-        topTracks: [],
-      },
+      user: null,
       setUser: (user: User) => set({ user }),
     }),
     {

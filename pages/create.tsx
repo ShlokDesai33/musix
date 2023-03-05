@@ -29,7 +29,23 @@ export default function CreateSession() {
                 ],
                 streaming: true
               })
-              router.replace(`/host?theme=${theme.id}`)
+
+              // make post request to create session
+              fetch('/create-session', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  theme: theme.name,
+                  creatorId: user.id,
+                })
+              })
+                .then(res => res.json())
+                .then(data => {
+                  router.replace(`/${data.id}/host?themeId=${theme.id}`);
+                })
+                .catch(err => console.log(err))
             }}
             type="button"
           >

@@ -1,9 +1,9 @@
 import Layout from '@/components/layouts/mobile'
 import { toast } from 'react-toastify'
 import { themesMap } from '@/shared/constants'
-import { GetServerSideProps } from 'next'
 import QRCode from 'react-qr-code'
 import { Notepad, SpotifyLogo, X } from 'phosphor-react'
+import { GetServerSideProps } from 'next'
 
 const handleToast = () => {
   toast('Loading...', {
@@ -14,7 +14,7 @@ const handleToast = () => {
   });
 };
 
-export default function HostSession({ themeID }: { themeID: string }) {
+export default function HostSession({ id, themeId }: { id: string, themeId: string }) {
   return (
     <div className="flex flex-col justify-between h-full w-full">
       <div>
@@ -22,7 +22,7 @@ export default function HostSession({ themeID }: { themeID: string }) {
           Session is Active
         </p>
         <p className="text-sm text-gray-600 mt-1">
-          Theme: <span className="text-blue-600 font-semibold">{themesMap.get(themeID)}</span>
+          Theme: <span className="text-blue-600 font-semibold">{themesMap.get(themeId)}</span>
         </p>
 
         <hr className="mt-5 mb-4" />
@@ -40,7 +40,7 @@ export default function HostSession({ themeID }: { themeID: string }) {
           <QRCode
             size={256}
             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-            value={`https://www.musix.vercel.app/join/${themeID}`}
+            value={`https://www.musix.vercel.app/${id}/join/`}
             viewBox={`0 0 256 256`}
           />
         </div>
@@ -66,14 +66,15 @@ export default function HostSession({ themeID }: { themeID: string }) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<{ themeID: string }> = async (context) => {
-  // get query params
-  const { theme } = context.query;
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { id, themeId } = context.query;  
+
   return {
     props: {
-      themeID: theme as string,
-    },
-  };
+      id: id,
+      themeId: themeId,
+    }
+  }
 }
 
 HostSession.getLayout = function getLayout(page: React.ReactElement) {

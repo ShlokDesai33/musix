@@ -1,18 +1,15 @@
 import { Waveform } from '@uiball/loaders'
 import { SpotifyLogo } from 'phosphor-react'
-import useMusixStore from '@/shared/store'
 import { clientId, redirectUri, scopes } from '@/shared/constants'
 
 export default function Index() {
-  const test = useMusixStore();
-  
   return (
     <>
       <div className="absolute left-0 right-0 top-0 bottom-0 flex items-center justify-center">
         <div className="flex flex-col items-center mb-40">
           <Waveform
             size={55}
-            lineWeight={4}
+            lineWeight={3}
             speed={2}
             color="black"
           />
