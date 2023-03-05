@@ -1,6 +1,7 @@
 import { Waveform } from '@uiball/loaders'
 import { SpotifyLogo } from 'phosphor-react'
 import useMusixStore from '@/shared/store'
+import { clientId, redirectUri, scopes } from '@/shared/constants'
 
 export default function Index() {
   const test = useMusixStore();
@@ -20,7 +21,9 @@ export default function Index() {
       </div>
 
       <button className="absolute gap-x-2 py-3 rounded-full bottom-6 left-4 right-4 bg-[#1db954]" onClick={e => {
-        // TODO: Add login logic
+        e.preventDefault();
+        const scopesStr = scopes.join(' ');
+        window.location.href= `https://accounts.spotify.com/authorize?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopesStr}`;
       }}>
         <div className="flex items-center justify-center gap-x-1">
           <SpotifyLogo size={32} color="#fff" weight='fill' />

@@ -48,3 +48,18 @@ export const themes = [
     'name': 'Everybody\'s Top Songs'
   },
 ]
+
+export const scopes = [
+  'streaming',
+  'app-remote-control',
+  'user-modify-playback-state',
+  'user-library-read',
+  'playlist-read-private',
+  'playlist-read-collaborative',
+  'user-read-playback-state',
+  'user-read-private',
+  'user-read-email'
+]
+
+export const redirectUri = 'http://localhost:3000/login'
+export const clientId = '1a1b5b6ffcd84abe970e58d7524b24ce'
